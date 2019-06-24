@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4DFFA37D"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="28dp"
+            android:textColor="@color/colorlayouttxt"
+            android:textStyle="bold"
+            android:text="@string/welcom" />
+
+        <LinearLayout
+            android:id="@+id/biglayout"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="67dp"
+            android:layout_height="350dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="7dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/im0"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="XO"
+                    android:tag="0"
+                    app:srcCompat="@drawable/ic_tic_tac_toe"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <ImageView
+                    android:id="@+id/im1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="XO"
+                    android:tag="1"
+                    app:srcCompat="@drawable/ic_tic_tac_toe"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <ImageView
+                    android:id="@+id/im2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="XO"
+                    android:tag="2"
+                    app:srcCompat="@drawable/ic_tic_tac_toe"
+                    tools:ignore="VectorDrawableCompat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="7dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/im3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="XO"
+                    android:tag="3"
+                    app:srcCompat="@drawable/ic_tic_tac_toe"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <ImageView
+                    android:id="@+id/im4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="XO"
+                    android:tag="4"
+                    app:srcCompat="@drawable/ic_tic_tac_toe"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <ImageView
+                    android:id="@+id/im5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="XO"
+                    android:tag="5"
+                    app:srcCompat="@drawable/ic_tic_tac_toe"
+                    tools:ignore="VectorDrawableCompat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="7dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/im6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="XO"
+                    android:tag="6"
+                    app:srcCompat="@drawable/ic_tic_tac_toe"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <ImageView
+                    android:id="@+id/im7"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="XO"
+                    android:tag="7"
+                    app:srcCompat="@drawable/ic_tic_tac_toe"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <ImageView
+                    android:id="@+id/im8"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="XO"
+                    android:tag="8"
+                    app:srcCompat="@drawable/ic_tic_tac_toe"
+                    tools:ignore="VectorDrawableCompat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/w_layout"
+                android:gravity="center"
+                android:layout_marginTop="-180dp"
+                android:layout_width="320dp"
+                android:layout_height="100dp"
+                android:visibility="invisible"
+                android:background="@color/colorlayout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtW"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/colorlayouttxt"
+                    android:textSize="25dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/butgame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:background="@color/colorlayoutbtn"
+                        android:drawableLeft="@drawable/ic_replay"
+                        android:onClick="butplay"
+                        android:text="@string/play_ag" />
+
+                    <Button
+                        android:id="@+id/but_exit"
+                        android:onClick="but_exit"
+                        android:layout_margin="4dp"
+                        android:drawableLeft="@drawable/ic_logout"
+                        android:padding="8dp"
+                        android:textSize="18dp"
+                        android:background="@color/colorlayoutbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Exit" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:padding="7dp">
+
+                <TextView
+                    android:id="@+id/txtp54"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txtp1"
+                    android:textSize="18dp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/txtp294"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/txtp2"
+                    android:textSize="18dp"
+                    android:gravity="center_horizontal"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/txtp348"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/txtp3"
+                    android:textSize="18dp"
+                    android:gravity="center_horizontal"
+                    tools:ignore="RtlCompat" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/txtp1"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="18dp"
+                    tools:ignore="RtlCompat"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/txtp2"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="18dp"
+                    tools:ignore="RtlCompat"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/txtD"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center_horizontal"
+                    tools:ignore="RtlCompat"
+                    android:textSize="18dp"
+                    android:text="0" />
+            </TableRow>
+        </TableLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

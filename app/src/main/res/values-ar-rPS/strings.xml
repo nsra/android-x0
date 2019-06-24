@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">XO Game</string>
+    <string name="play_ag">اللعب مجدداً</string>
+    <string name="welcom">اهلا بك في لعبة XO </string>
+    <string name="Exit">خروج</string>
+    <string name="txtp1">X اللاعب</string>
+    <string name="txtp2">O اللاعب</string>
+    <string name="txtp3">التعادل</string>
+</resources>

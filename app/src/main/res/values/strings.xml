@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">XOلعبة</string>
+    <string name="play_ag">Play Again</string>
+    <string name="welcom">Welcome to XO game</string>
+    <string name="Exit">Exit</string>
+    <string name="txtp1">Player X</string>
+    <string name="txtp2">Player O</string>
+    <string name="txtp3">Draw</string>
+</resources>
